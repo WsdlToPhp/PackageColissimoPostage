@@ -14,7 +14,7 @@ rm -rf  $DEST/src/ \
         $DEST/composer.lock;
 
 # package informations
-php-7.3 wsdltophp.phar generate:package \
+php wsdltophp.phar generate:package \
     --urlorpath="https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl" \
     --destination=$DEST \
     --composer-name="wsdltophp/package-colissimo-postage" \
@@ -24,7 +24,7 @@ php-7.3 wsdltophp.phar generate:package \
     --namespace="ColissimoPostage";
 
 # generate package
-php-7.3 wsdltophp.phar generate:package \
+php wsdltophp.phar generate:package \
     --urlorpath="https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl" \
     --destination=$DEST \
     --composer-name="wsdltophp/package-colissimo-postage" \
