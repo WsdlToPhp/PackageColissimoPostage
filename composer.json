@@ -15,5 +15,11 @@
         }
     },
     "type": "library",
-    "license": "MIT"
+    "license": "MIT",
+    "require-dev": {
+        "phpstan/phpstan": "^1.4"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyze src --level=3"
+    }
 }
