@@ -28,6 +28,8 @@ php wsdltophp.phar generate:package \
     --urlorpath="https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl" \
     --destination=$DEST \
     --composer-name="wsdltophp/package-colissimo-postage" \
+    --composer-settings="type:library" \
+    --composer-settings="license:MIT" \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
     --soapclient="\SoapClient\SoapClientBase" \

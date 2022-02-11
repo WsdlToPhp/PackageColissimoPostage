@@ -3,6 +3,7 @@
 [![Dependency Status](https://www.versioneye.com/user/projects/56e426e4df573d003a5f5e9f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e426e4df573d003a5f5e9f)
 [![StyleCI](https://styleci.io/repos/53735115/shield)](https://styleci.io/repos/53735115)
 [![Total Downloads](https://poser.pugx.org/wsdltophp/package-colissimo-postage/downloads)](https://packagist.org/packages/wsdltophp/package-colissimo-postage)
+[![SymfonyInsight](https://insight.symfony.com/projects/83e8514e-f8c4-441c-834d-3ec246654043/mini.svg)](https://insight.symfony.com/projects/83e8514e-f8c4-441c-834d-3ec246654043)
 
 # PackageColissimoPostage
 This package has been generated from the [Colissimo Postage Web Services](https://ws.colissimo.fr/sls-ws/SlsServiceWS?wsdl) WSDL using the [PackageGenerator](https://github.com/WsdlToPhp/PackageGenerator) project.

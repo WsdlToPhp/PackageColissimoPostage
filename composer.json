@@ -13,5 +13,7 @@
             "ColissimoPostage\\": "./src/ColissimoPostage",
             "SoapClient\\": "./SoapClient/"
         }
-    }
+    },
+    "type": "library",
+    "license": "MIT"
 }
