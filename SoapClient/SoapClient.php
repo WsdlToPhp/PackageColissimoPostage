@@ -14,7 +14,7 @@ final class SoapClient extends \SoapClient
      * Final XML request
      * @var string|null
      */
-    public ?string $lastRequest;
+    public ?string $lastRequest = null;
 
     /**
      * @see SoapClient::__doRequest()
