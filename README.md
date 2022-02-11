@@ -1,4 +1,5 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WsdlToPhp/PackageColissimoPostage/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/WsdlToPhp/PackageColissimoPostage/?branch=develop)
+[![TeamCity build status](https://teamcity.mikael-delsol.fr/app/rest/builds/buildType:id:PackageColissimoPostage_Build/statusIcon.svg)](https://github.com/WsdlToPhp/PackageColissimoPostage)
 [![Latest Stable Version](https://poser.pugx.org/wsdltophp/package-colissimo-postage/v/stable)](https://packagist.org/packages/wsdltophp/package-colissimo-postage)
 [![Dependency Status](https://www.versioneye.com/user/projects/56e426e4df573d003a5f5e9f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e426e4df573d003a5f5e9f)
 [![StyleCI](https://styleci.io/repos/53735115/shield)](https://styleci.io/repos/53735115)

@@ -1,23 +1,25 @@
 <?php
 
+declare(strict_types=1);
+
 namespace SoapClient;
 
 /**
  * This class can be overridden at your will.
  * Its only purpose is to show you how you can use your own SoapClient client.
  */
-class SoapClient extends \SoapClient
+final class SoapClient extends \SoapClient
 {
     /**
      * Final XML request
-     * @var string
+     * @var string|null
      */
-    public $lastRequest;
+    public ?string $lastRequest;
 
     /**
      * @see SoapClient::__doRequest()
      */
-    public function __doRequest($request, $location, $action, $version, $oneWay = null)
+    public function __doRequest($request, $location, $action, $version, $oneWay = null): ?string
     {
         /**
          * Colissimo does not support type definition
@@ -30,6 +32,9 @@ class SoapClient extends \SoapClient
          * Colissimo returns headers and boundary parts
          */
         $response = parent::__doRequest($this->lastRequest = $request, $location, $action, $version, $oneWay);
+        if (empty($response)) {
+            return $response;
+        }
         /**
          * So we only keep the XML envelope
          */
@@ -39,9 +44,9 @@ class SoapClient extends \SoapClient
     /**
      * Override it in order to return the final XML Request
      * @see SoapClient::__getLastRequest()
-     * @return string
+     * @return string|null
      */
-    public function __getLastRequest()
+    public function __getLastRequest(): ?string
     {
         return $this->lastRequest;
     }
