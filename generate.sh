@@ -19,8 +19,10 @@ php wsdltophp.phar generate:package \
     --destination=$DEST \
     --composer-name="wsdltophp/package-colissimo-postage" \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
+    --composer-settings="type:library" \
+    --composer-settings="license:MIT" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
-    --soapclient="\SoapClient\SoapClientBase" \
+    --soapclient="SoapClient\SoapClientBase" \
     --namespace="ColissimoPostage";
 
 # generate package
@@ -32,6 +34,6 @@ php wsdltophp.phar generate:package \
     --composer-settings="license:MIT" \
     --composer-settings="autoload.psr-4.SoapClient\:./SoapClient/" \
     --addcomments="author:WsdlToPhp <contact@wsdltophp.com>" \
-    --soapclient="\SoapClient\SoapClientBase" \
+    --soapclient="SoapClient\SoapClientBase" \
     --namespace="ColissimoPostage" \
     --force;

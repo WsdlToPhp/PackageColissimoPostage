@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace ColissimoPostage\ServiceType;
 
 use SoapFault;
-use \SoapClient\SoapClientBase;
+use SoapClient\SoapClientBase;
 
 /**
  * This class stands for Check ServiceType
