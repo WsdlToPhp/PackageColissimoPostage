@@ -25,17 +25,12 @@ $ git clone https://github.com/WsdlToPhp/PackageColissimoPostage.git package-col
 $ cd package-colissimo-postage
 $ ./generate.sh
 ```
-After generating the package, don't forget to edit the generated [composer.json](composer.json) file in order to update the psr-4 autoloading:
-```json
-"psr-4": {
-    "ColissimoPostage\\": "./src/",
-    "SoapClient\\": "./SoapClient/"
-}
-```
-Then run:
+
+Then run (to get PHPStan):
 ```bash
 $ composer update
 ```
+
  To learn how to customize the generated package, please read the PackageGenerator's [README](https://github.com/WsdlToPhp/PackageGenerator/blob/master/README.md).
 
 # How to use the generated package?
