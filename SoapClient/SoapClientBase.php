@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace SoapClient;
 
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -17,12 +19,14 @@ class SoapClientBase extends AbstractSoapClientBase
     /**
      * @var string
      */
-    const DEFAULT_SOAP_CLIENT_CLASS = '\SoapClient\SoapClient';
+    const DEFAULT_SOAP_CLIENT_CLASS = SoapClient::class;
+
     /**
-     * @see \WsdlToPhp\PackageBase\AbstractSoapClientBase::getSoapClientClassName()
+     * @param string|null $soapClientClassName
      * @return string
+     * @see \WsdlToPhp\PackageBase\AbstractSoapClientBase::getSoapClientClassName()
      */
-    public function getSoapClientClassName($soapClientClassName = null)
+    public function getSoapClientClassName(?string $soapClientClassName = null): string
     {
         return parent::getSoapClientClassName(static::DEFAULT_SOAP_CLIENT_CLASS);
     }

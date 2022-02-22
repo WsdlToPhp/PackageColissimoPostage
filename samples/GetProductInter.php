@@ -47,10 +47,11 @@ if (false) {
  * Sample call for getProductInter operation/method
  */
 if ($result !== false) {
+    $messages = $result->getReturn()->getMessages();
     echo sprintf('Product: %s', implode(',', $result->getReturn()->getProduct())) . PHP_EOL;
     echo sprintf('PartnerType: %s', $result->getReturn()->getPartnerType()) . PHP_EOL;
     echo sprintf('ReturnTypeChoice: %s', implode(', ', $result->getReturn()->getReturnTypeChoice())) . PHP_EOL;
-    echo sprintf('Message: %s', array_shift($result->getReturn()->getMessages())->getMessageContent()) . PHP_EOL;
+    echo sprintf('Message: %s', array_shift($messages)->getMessageContent()) . PHP_EOL;
 } else {
-    print_r($get->getLastError());
+    echo $get->getLastErrorForMethod(sprintf('%s::Get', Get::class))->getMessage();
 }
