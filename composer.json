@@ -16,6 +16,19 @@
     },
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikael DELSOL",
+            "email": "contact@wsdltophp.com",
+            "homepage": "https://www.wsdltophp.com",
+            "role": "owner"
+        },
+        {
+            "name": "Maxime Veber",
+            "email": "nek.dev@gmail.com",
+            "role": "Contributor"
+        }
+    ],
     "require-dev": {
         "phpstan/phpstan": "^1.4"
     },
